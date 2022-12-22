@@ -37,7 +37,7 @@ main2 {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    padding-top: 1%;
+    /* padding-top: 1%; */
 }
 
 .box {
@@ -121,17 +121,16 @@ header1 > input {
 
 .grid-container1 {
     display: grid-in;
+    gap: 10px;
     grid-template-columns: auto auto auto;
     background-color: #587f9e;
     padding: 10px;
-    height: 38vh;
-    width: 25vw;
-    
-  }
+}
 .grid-item1 {
+    display: grid;
     background-color: rgba(255, 255, 255, 0.8);
     border: .5px solid #5EB1BF;
-    padding: 20px;
+    padding: 20px 0;
     font-size: 30px;
     text-align: center;
     height: 16vh;
@@ -205,7 +204,7 @@ button.remove {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #3e8e41; 
 }
 
 li{
