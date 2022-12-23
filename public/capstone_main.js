@@ -1,42 +1,8 @@
+//////////Motto Box/////////
 
-// let addButton5 = document.querySelector('#add5')
-// let addInput5 = document.querySelector('#item5')
-// addButton5.addEventListener('click', function () {
+function myFunction() {
+  document.getElementById('placeholder').value
 
-//   let newItem5 = document.getElementById('item5').value
-//   if (newItem5) {
-//     addDream(newItem5)
-//     document.getElementById('item5').value = ''
-//   }
-// })
-// addInput5.addEventListener('keypress', function (e) {
-//   if (13 === e.keyCode) {
-//     let newItem5 = document.getElementById('item5').value
-//     if (newItem5) {
-//       addDream(newItem5)
-//       document.getElementById('item5').value = ''
-//     }
-//   }
-// })
-
-function addMotto(text) {
-  let list5 = document.getElementById('Motto')
-  let item5 = document.createElement('li')
-  item5.innerText = text
-  let buttons = document.createElement('div')
-  buttons.classList.add('buttons')
-  let remove = document.createElement('button')
-  remove.classList.add('remove')
-  remove.addEventListener('click', removeItem)
-  buttons.appendChild(remove)
-  item5.appendChild(buttons)
-  list5.appendChild(item5) 
-}
-
-function removeItem() {
-  let item5 = this.parentNode.parentNode
-  let parent5 = item5.parentNode
-  parent5.removeChild(item5)
 }
 
 
@@ -45,44 +11,46 @@ function removeItem() {
 
 
 
-let addButton4 = document.querySelector('#add4')
-let addInput4 = document.querySelector('#item4')
-addButton4.addEventListener('click', function () {
+/////////////add items to lists////////////
 
-  let newItem4 = document.getElementById('item4').value
-  if (newItem4) {
-    addWant(newItem4)
-    document.getElementById('item4').value = ''
+let addButton = document.querySelector('#add')
+let addInput = document.querySelector('#item')
+addButton.addEventListener('click', function () {
+
+  let newItem = document.getElementById('item').value
+  if (newItem) {
+    addWant(newItem)
+    document.getElementById('item').value = ''
   }
 })
-addInput4.addEventListener('keypress', function (e) {
+addInput.addEventListener('keypress', function (e) {
   if (13 === e.keyCode) {
-    let newItem4 = document.getElementById('item4').value
-    if (newItem4) {
-      addWant(newItem4)
-      document.getElementById('item4').value = ''
+    let newItem = document.getElementById('item').value
+    if (newItem) {
+      addWant(newItem)
+      document.getElementById('item').value = ''
     }
   }
 })
 
 function addWant(text) {
-  let list4 = document.getElementById('want')
-  let item4 = document.createElement('li')
-  item4.innerText = text
+  let list = document.getElementById('wants')
+  let item = document.createElement('li')
+  item.innerText = text
   let buttons = document.createElement('div')
   buttons.classList.add('buttons')
   let remove = document.createElement('button')
   remove.classList.add('remove')
   remove.addEventListener('click', removeItem)
   buttons.appendChild(remove)
-  item4.appendChild(buttons)
-  list4.appendChild(item4) 
+  item.appendChild(buttons)
+  list.appendChild(item) 
 }
 
 function removeItem() {
-  let item4 = this.parentNode.parentNode
-  let parent4 = item4.parentNode
-  parent4.removeChild(item4)
+  let item = this.parentNode.parentNode
+  let parent = item.parentNode
+  parent.removeChild(item)
 }
 
 
@@ -102,7 +70,7 @@ addInput1.addEventListener('keypress', function (e) {
   if (13 === e.keyCode) {
     let newItem1 = document.getElementById('item1').value
     if (newItem1) {
-      addInpired(newItem1)
+      addInspired(newItem1)
       document.getElementById('item1').value = ''
     }
   }
@@ -114,7 +82,7 @@ function addInspired(text) {
   item1.innerText = text
   let buttons = document.createElement('div')
   buttons.classList.add('buttons')
-  let remove = document.createElement('button')
+  let remove = document.createElement('button' value="Remove") 
   remove.classList.add('remove')
   remove.addEventListener('click', removeItem)
   buttons.appendChild(remove)
@@ -144,7 +112,7 @@ addInput2.addEventListener('keypress', function (e) {
   if (13 === e.keyCode) {
     let newItem2 = document.getElementById('item2').value
     if (newItem2) {
-      addInpired(newItem2)
+      addGoal(newItem2)
       document.getElementById('item2').value = ''
     }
   }
@@ -210,4 +178,23 @@ function removeItem() {
   let item3 = this.parentNode.parentNode
   let parent3 = item3.parentNode
   parent3.removeChild(item3)
+}
+
+////////drop down function///////////
+function myFunction1() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
 }

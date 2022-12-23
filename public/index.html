@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Permanent+Marker&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header-1">
         <div>
             <div class ="boxvision">
                 <h1>My Vision Board</h1>
@@ -27,7 +27,8 @@
                     type= 'text'
                     id="Motto"
                     placeholder = "Enter Your Life's Motto Here"/>
-                    <button class="addbtn" id="add">Add</button>
+                    
+                    <button type="button" button class= "addbtn" onclick="myFunction()">Add</button>
                 </form>
             </section>
                 <ul></ul>
@@ -35,16 +36,16 @@
     </header>
     
 
-    <main>
+    <main id="main-1">
         <div class="box">
              
                 <div id="container">
-                  <header1>
+                  <header id="header-2">
                     
-                    <input type="text" placeholder="Enter Something You Want" id="item4" />
-                    <button class="addbtn" id="add4">Add</button>
+                    <input type="text" placeholder="Enter Something You Want" id="item" />
+                    <button class="addbtn" id="add">Add</button>
                     <h2>My Wants</h2>
-                  </header1>
+                  </header>
                   
                   <ul class="wants" id="wants"></ul>
                   
@@ -59,47 +60,37 @@
                 <div class="item1">
                     <select>
                         <div class="dropdown">
-                            <button class="dropbtn">
-                                Vision Board Pictures
-                            </button>
-                              
-                            <div class="dropdown-content">
-                                <a href="#">
-                                    <img src=
+                            <button onclick="myFunction1()" class="dropbtn">Select A Picture</button>
+                            <div id="myDropdown" class="dropdown-content"> -->
+                                <a href="#">Pet<img src=
                 "https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80" 
-                                    width="20" height="15"> Pet</a>
-                  
-                                <a href="#">
-                                    <img src=
-                "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                                    width="20" height="15"> Beach</a>
+                alt="Pet" width="20" height="15"/><span class="value">Pet</span></a></li> 
+                   
+                                <a href="#">Beach<img src=
+                "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Beach"
+                alt="Beach" /><span class="value">Beach</span></a></li>
 
-                                <a href="#">
-                                    <img src=
+                                <a href="#">New Career<img src=
                 "https://images.unsplash.com/photo-1459180129673-eefb56f79b45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1773&q=80"
-                                    width="20" height="15"> New Career</a>
+                alt="New Career" width="20" height="15"/><span class="value">New Career</span></a></li>
 
-                                <a href="#">
-                                    <img src=
+                                <a href="#">Travel<img src=
                 "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80"
-                                    width="20" height="15"> Travel</a>
+                alt="Travel" /><span class="value">Travel</span></a></li>
 
-                                    <img src=
+                                <a href="#">New House<img src=
                 "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
-                                     width="20" height="15"> New House</a>
+                alt="New House" width="20" height="15"/><span class="value">New House</span></a></li>
                                       
-                                <a href="#">
-                                    <img src=
+                                <a href="#">Family<img src=
                 "https://images.unsplash.com/photo-1584715404879-3d8ffc080672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-                                    width="20" height="15"> Family</a>
+                alt="Family" width="20" height="15"/><span class="value">Family</span></a></li>
 
-                                <a href="#">
-                                    <img src=
+                                <a href="#">Reading<img src=
                 "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
-                                    width="20" height="15"> Reading</a>
+                alt="Reading" width="20" height="15"/><span class="value">Reading</span></a></li>
 
-                                <a href="#">
-                                    <img src=
+                                <a href="#">New Car<img src=
                 "https://images.unsplash.com/photo-1548087713-b1fdffcfddff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
                                     width="20" height="15"> Car</a>
                             </div>
@@ -112,17 +103,17 @@
                 <div class="item4">Right</div>
                 <div class="item5">Footer</div>
               </div>
-        </div>
+         
 
         </div>
         <div class="box">
             <body>
-               <div id="container">
-                 <header1>
+                <div id="container">
+                    <header id="header-2">
                    <input type="text" placeholder="What Inspires You" id="item1" />
                    <button class="addbtn" id="add1">Add</button>
                    <h2>My Inspiration</h2>
-                 </header1>
+                 </header-2>
                  
                  <ul class="inspire" id="inspire"></ul>
                  </div>
@@ -133,51 +124,52 @@
     </main> 
       
              
-    <main2>
+    <main id="main-2">
                 <div class="box1">
                     
                        <div id="container">
-                         <header1>
+                        <header id="header-2">
                            
                            <input type="text" placeholder="Enter Your Goals" id="item2" />
                            <button class="addbtn" id="add2">Add</button>
                            <h2>My Goals</h2>
-                         </header1>
+                         </header>
                          
                          <ul class="goal" id="goal"></ul>
                          
                        </div>
-            
+           
                      
                </div>
-     
-        <div class="picGrid">
-            <div class="grid-container1">
-                <div class="grid-item1"></div>
-                <div class="grid-item1"></div>
-        </div>
-
+            <div class="box2">
+                    
+                <div class="picGrid">
+                    <div class="grid-container1">
+                        <div class="grid-item1"></div>
+                        <div class="grid-item1"></div>
+                    </div>
+                </div>   
+            </div>
         
-        <div class="box1">
-        
-               <div id="container">
-                 <header1>
-                   
-                   <input type="text" placeholder="Enter Your Dream" id="item3" />
-                   <button class="addbtn" id="add3">Add</button>
-                   <h2>My Dreams</h2>
-                 </header1>
+                <div class="box1">
+                        <div id="container">
+                        <header id="header-2">
+                    
+                        <input type="text" placeholder="Enter Your Dream" id="item3"/>
+                        <button class="addbtn" id="add3">Add</button>
+                        <h2>My Dreams</h2>
+                        </header>
                  
-                 <ul class="dream" id="dream"></ul>
+                        <ul class="dream" id="dream"></ul>
                  
-               </div>
-          
+                </div>
+         
              
         </div>
           
-    </main2>
+    </main>
 
        <script src="capstone_main.js"></script>
    
 </body>
-</html>
+</html> -->
