@@ -103,7 +103,16 @@ h1{
      
 }
 
-.item1 { grid-area: header; }
+.item1 { grid-area: header; 
+background-size: cover;
+background-position: center;
+}
+
+.item2 { grid-area: header; 
+    background-size: cover;
+    background-position: center;
+    }
+
 .item2 { grid-area: menu; }
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
@@ -174,23 +183,33 @@ header > div > form {
 
 button.remove {
     height: 2vh;
-    width: 3vw;
+    width: 6vw;
     
 }
 .addbtn:hover {
-    font-size: 18px;
+    font-size: 17px;
     
 }
 
-.dropbtn {
-    background-color: #4CAF50;
+/* /* .dropbtn {
+    /* background-color: #4CAF50;
     color: white;
     padding: 1px;
-    font-size: 16px;
-    border: none;
+    font-size: 16px; */
+    /* border: none;
     cursor: pointer;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 3px 15px;
+    background-color: rgb(164, 167, 168);
+    border-radius: 3%;
+    transition: .4s;
+    float: right;
+    height: 3vh;
+    width: 5vw; 
+    text-align: center;  */
     
-}
+ 
 
 .dropdown {
     position: relative;
@@ -239,4 +258,8 @@ li{
     margin: auto; 
     font-family: 'Permanent Marker', cursive;
     overflow-wrap: break-word;
+}
+.remove{
+    font-size: 12px;
+
 }
