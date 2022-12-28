@@ -130,9 +130,10 @@ h1{
   font-size: 30px; */
 }
 
-img{
+#img-1{
     background-size: cover;
     background-position: center;
+   
     height: 41.5vh;
     width: 26vw;
 }
