@@ -107,21 +107,11 @@ h1{
      
     background-size: cover;
     background-position: center;
-    height: 39.5vh;
     width: 26vw;
+    height: 41.5vh;
 }
 
-/* .item2 { grid-area: header; 
-    background-size: cover;
-    background-position: center;
-    height: 38vh;
-    width: 23vw;
-    } */
 
-/* .item2 { grid-area: menu; } */
-/* .item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; } */
 
 .picGrid {
     width: 26vw;
@@ -131,21 +121,7 @@ h1{
     border-color: #587f9e; border: solid; border-width: 5px; 
 }
 
-/* .grid-container { */
-  /* display: flex;  */
 
-  /* grid-template-areas: 
-    /* 'header header header header header header'
-    'menu main main main right right' */
-    /* 'menu footer footer footer footer footer'; */
-  /* gap: 10px; */
-  /* background-color: #21587f9e; */
-  /* padding: 10px; */
-  /* width: 26vw;
-    height: 36vh;
-    padding-bottom: 5%;  
-    border-color: #587f9e; border: solid; border-width: 5px;
-} */ */
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -154,28 +130,12 @@ h1{
   font-size: 30px; */
 }
 
-/* .grid-container1 {
-    display: block;
-    gap: 10px;
-    /* grid-template-columns: auto auto auto; */
-    /* background-color: #587f9e;
-    padding: 10px;
-     */ 
-
-/* .grid-item1 {
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: .5px solid #5EB1BF;
-    /* padding: 20px 0; */
-    
-    
-    /* width: 25vw; */
-    /* gap: 10px;
-    padding: 10px;
-  } */ 
-/* header > div > form {
-    padding-bottom: -1%;
-  } */
+img{
+    background-size: cover;
+    background-position: center;
+    height: 41.5vh;
+    width: 26vw;
+}
 
 .addbtn { 
     border-radius: 2px;
