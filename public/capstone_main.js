@@ -1,15 +1,11 @@
 //////////Motto Box/////////
 
 function myFunction() {
-  document.getElementById('placeholder').value
+  // window.onclick = function(event) {
+  let x =document.getElementById('motto').placeholder;
+  document.getElementById('motto').innerHTML = x;
 
 }
-
-
-
-
-
-
 
 /////////////add items to lists////////////
 
@@ -23,6 +19,7 @@ addButton.addEventListener('click', function () {
     document.getElementById('item').value = ''
   }
 })
+
 addInput.addEventListener('keypress', function (e) {
   if (13 === e.keyCode) {
     let newItem = document.getElementById('item').value
@@ -33,7 +30,12 @@ addInput.addEventListener('keypress', function (e) {
   }
 })
 
-function addWant(text) {
+function addWant(text){
+//   axios.get("http://localhost:4000/api/want/")
+// .then(res => {
+//     const data = res.data;
+//     alert(data);
+// });
   let list = document.getElementById('wants')
   let item = document.createElement('li')
   item.innerText = text
@@ -46,8 +48,10 @@ function addWant(text) {
   buttons.appendChild(remove)
   item.appendChild(buttons)
   list.appendChild(item) 
-}
 
+
+
+}
 function removeItem() {
   let item = this.parentNode.parentNode
   let parent = item.parentNode
@@ -183,5 +187,119 @@ function removeItem() {
   let parent3 = item3.parentNode
   parent3.removeChild(item3)
 }
+
+////////drop down function///////////
+function myFunction1() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+let puppyImg= document.getElementById('puppy')
+let picSelect = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+puppyImg.addEventListener("click",picSelect)
+
+let beachImg= document.getElementById('beach')
+let picSelect1 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+beachImg.addEventListener("click",picSelect)
+
+
+
+let careerImg= document.getElementById('career')
+let picSelect2 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+careerImg.addEventListener("click",picSelect)
+
+
+let travelImg= document.getElementById('travel')
+let picSelect3 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+travelImg.addEventListener("click",picSelect)
+
+
+let houseImg= document.getElementById('house')
+let picSelect4 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+houseImg.addEventListener("click",picSelect)
+
+
+
+let familyImg= document.getElementById('family')
+let picSelect5 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+familyImg.addEventListener("click",picSelect)
+
+
+let relaxImg= document.getElementById('relax')
+let picSelect6 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+relaxImg.addEventListener("click",picSelect)
+
+let carImg= document.getElementById('car')
+let picSelect7 = (evt) => {
+    let item1 =document.getElementById('item1')
+    item1.style.backgroundImage = `url(${evt.target.src})`
+}
+
+carImg.addEventListener("click",picSelect)
+
+
+///Drop Down 2///
+
+function myFunction2() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+////Axios////
+
 
 

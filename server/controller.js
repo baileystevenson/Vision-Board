@@ -1,9 +1,12 @@
-// const database = require('./db.json')
+const database =[]
+let newID =1
 
 module.exports={
     getAllWants:(req,res) => {
+        console.log('endpoint hit')
         res.status(200).send(database)
     },
+
     createWant:(req,res) => {
         res.status(200).send(database)
     },
@@ -11,10 +14,11 @@ module.exports={
         res.status(200).send(database)
     },
 
-    createWant: (req, res) => {
-        let{ want } = req.body
-        let newWant = {
-        id: newID,
+createWant: (req, res) => {
+    let{ want } = req.body
+    let newWant = {
+    id: newID,
+    want,
    }
     
     database.push(newWant)
