@@ -1,7 +1,6 @@
 //////////Motto Box/////////
 
 function myFunction() {
-  // window.onclick = function(event) {
   let mottoBar =document.getElementById('motto');
   let newMotto=mottoBar.value
   mottoBar.placeholder=newMotto
