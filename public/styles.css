@@ -8,16 +8,12 @@ h2 {
     text-align: center;
     font-size: 30px;
     text-decoration-line: underline;
-    
 }
 
 h1{
     color: black;
     text-align: center;
     font-size: 43px;
-    /* border-color: black; border: solid; border-width: 1px; */
-
-   
 }
 
 #header-1 > div {
@@ -37,7 +33,6 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    /* padding-top: 1%; */
 }
 
 .box {
@@ -46,27 +41,22 @@ h1{
     background-color: #5EB1BF;
     padding-bottom: 5%;  
     border-color: #587f9e; border: solid; border-width: 5px;
-    
 }
 
 .box1 {
-
     width: 26vw;
     height: 32vh;
-    /* border: 1px solid black; */
     background-color: #5EB1BF;
     padding-bottom: 5%;
     border-color: #587f9e; border: solid; border-width: 5px;
 }
 
 .box2 {
-
     width: 26vw;
     height: 32vh;
     background-color: #5EB1BF;
     padding-bottom: 5%;  
-    border-color: #587f9e; border: solid; border-width: 5px;
-    
+    border-color: #587f9e; border: solid; border-width: 5px; 
 }
 
 
@@ -74,7 +64,6 @@ h1{
     display: flex;
     justify-content: center;
     height: 11vh;
-  
 }
 
  #header-1> div input{
@@ -88,7 +77,6 @@ h1{
     text-align: center;
     margin: auto;
     border-color: #587f9e; border: solid; border-width: 5px;
-   
 }
 
 #header-2 > input {
@@ -98,20 +86,15 @@ h1{
     font-size: 18px;
     margin: auto;
     display: block; 
-    font-family: 'Permanent Marker', cursive;
-    
-     
+    font-family: 'Permanent Marker', cursive;    
 }
 
-.item1 { 
-     
+.item1 {  
     background-size: cover;
     background-position: center;
     width: 26vw;
-    height: 41.5vh;
+    height: 42.5vh;
 }
-
-
 
 .picGrid {
     width: 26vw;
@@ -121,19 +104,13 @@ h1{
     border-color: #587f9e; border: solid; border-width: 5px; 
 }
 
-
-
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
-  /* text-align: center; */
-  /* padding: 20px 0;
-  font-size: 30px; */
 }
 
 #img-1{
     background-size: cover;
     background-position: center;
-   
     height: 41.5vh;
     width: 26vw;
 }
@@ -154,19 +131,15 @@ h1{
 button.remove {
     height: 2vh;
     width: 2vw;
-    
-}
-.addbtn:hover {
-    font-size: 17px;
-    
 }
 
+.addbtn:hover {
+    font-size: 17px;   
+}
 
 .dropdown {
     position: relative;
-    display: inline-block;
-    
-    
+    display: inline-block; 
 }
 
 .dropdown-content {
@@ -201,16 +174,19 @@ button.remove {
 .show {display:block;}
 
 li{
-    /* height: 5vh;
-    width: 22vw; */
-  
     text-align: left;
     font-size: 20px;
     margin: auto; 
     font-family: 'Permanent Marker', cursive;
     overflow-wrap: break-word;
 }
+
 .remove{
     font-size: 8px;
+}
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

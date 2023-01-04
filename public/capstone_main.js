@@ -2,8 +2,10 @@
 
 function myFunction() {
   // window.onclick = function(event) {
-  let x =document.getElementById('motto').placeholder;
-  document.getElementById('motto').innerHTML = x;
+  let mottoBar =document.getElementById('motto');
+  let newMotto=mottoBar.value
+  mottoBar.placeholder=newMotto
+  mottoBar.value=""
 
 }
 
@@ -15,6 +17,7 @@ addButton.addEventListener('click', function () {
 
   let newItem = document.getElementById('item').value
   if (newItem) {
+    createWant({want:newItem})
     addWant(newItem)
     document.getElementById('item').value = ''
   }
@@ -30,12 +33,15 @@ addInput.addEventListener('keypress', function (e) {
   }
 })
 
+const baseURL = `/api/want`
+
+const wantCallback = ({ data: want }) => displayWant(want)
+const errCallback = err => console.log(err.response.data)
+
+const createWant = body => axios.post(baseURL, body).then(console.log('hello test')).catch(errCallback)
+const deleteWant = id => axios.delete(`${baseURL}/${id}`).then(wantCallback).catch(errCallback)
+
 function addWant(text){
-//   axios.get("http://localhost:4000/api/want/")
-// .then(res => {
-//     const data = res.data;
-//     alert(data);
-// });
   let list = document.getElementById('wants')
   let item = document.createElement('li')
   item.innerText = text
@@ -67,6 +73,7 @@ addButton1.addEventListener('click', function () {
 
   let newItem11 = document.getElementById('item11').value
   if (newItem11) {
+    createInspire({inspire:newItem})
     addInspired(newItem11)
     document.getElementById('item11').value = ''
   }
@@ -80,6 +87,15 @@ addInput1.addEventListener('keypress', function (e) {
     }
   }
 })
+
+
+const baseURL1 = `/api/inspire`
+
+const inspireCallback = ({ data: inspire }) => displayDisplay(inpsire)
+const errCallback1 = err => console.log(err.response.data)
+
+const createInspire = body => axios.post(baseURL, body).then(console.log('hello test')).catch(errCallback)
+const deleteInspire = id => axios.delete(`${baseURL}/${id}`).then(wantCallback).catch(errCallback)
 
 function addInspired(text) {
   let list11 = document.getElementById('inspire')
